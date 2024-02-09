@@ -1,5 +1,5 @@
-let computerChoice = getComputerChoice()
-let playerChoice = ""
+let computerSelection = getComputerChoice()
+let playerSelection = ""
 
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3)
@@ -17,7 +17,7 @@ function getPlayerChoice(playerString) {
     let formatedString  = formateString(playerString)
 
     if (isValid(formatedString)) {
-        playerChoice = formatedString
+        playerSelection = formatedString
     } else {
         console.log('Please, write Rock, Paper or Scissors')
     }
@@ -37,7 +37,7 @@ function formateString(string) {
     return formatedString
 }
 
-playerChoice = prompt('Rock, Paper, Scissors?')
+playerSelection = prompt('Rock, Paper, Scissors?')
 
-getPlayerChoice(playerChoice)
+getPlayerChoice(playerSelection)
 
