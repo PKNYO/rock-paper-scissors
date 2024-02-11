@@ -27,6 +27,16 @@ function playRound(player, computer) {
         scoreDisplay.textContent = `${playerScore} - ${computerScore}`
         infoText.textContent = (`You lose, ${computer} beats ${player}.`);
     }
+
+    isWinner()
+}
+
+function isWinner() {
+    if (playerScore === 5) {
+        scoreDisplay.textContent = `YOU WIN!`
+    } else if (computerScore === 5) {
+        scoreDisplay.textContent = `PC WINS!`
+    }
 }
 
 scoreDisplay.textContent = "0 - 0"
