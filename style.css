@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
 }
 
-button {
+.buttons > button {
     flex: 1;
     margin: 100px;
     font-size: 40px;
@@ -42,4 +42,15 @@ button {
     justify-content: center;
     text-transform: capitalize;
     font-size: 20px;
+}
+
+.againButton {
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-size: 15px;
+}
+
+.againButton:hover {
+    background-color: rgb(73, 73, 73);
 }

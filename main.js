@@ -36,7 +36,27 @@ function isWinner() {
         scoreDisplay.textContent = `YOU WIN!`
     } else if (computerScore === 5) {
         scoreDisplay.textContent = `PC WINS!`
+    } else {
+        return
     }
+
+    playAgain()
+}
+
+function playAgain() {
+    const againButton = document.createElement('button')
+    againButton.classList.add('againButton')
+    againButton.textContent = "Play Again ?"
+
+    infoText.textContent = ""
+    infoText.appendChild(againButton)
+
+    againButton.addEventListener("click", () => {
+        infoText.removeChild(againButton)
+        scoreDisplay.textContent = "0 - 0"
+        playerScore = 0
+        computerScore = 0
+    })
 }
 
 scoreDisplay.textContent = "0 - 0"
