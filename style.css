@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.score {
+    flex: 1;
+    background-color: rgb(237, 237, 237);
+}
+
+.buttons {
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+button {
+    flex: 1;
+    margin: 100px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.info {
+    display: flex;
+    height: 5vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}

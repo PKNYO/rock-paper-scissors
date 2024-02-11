@@ -70,7 +70,7 @@ function playGame() {
     playGame();
 }
 
-playerSelection = prompt('Rock, Paper, Scissors?');
+//playerSelection = prompt('Rock, Paper, Scissors?');
 
 playGame();
 
