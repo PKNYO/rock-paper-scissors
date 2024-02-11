@@ -40,6 +40,9 @@ function isWinner() {
         return
     }
 
+    choiceButtons.forEach((button) => {
+        button.disabled = true
+    })
     playAgain()
 }
 
@@ -56,6 +59,9 @@ function playAgain() {
         scoreDisplay.textContent = "0 - 0"
         playerScore = 0
         computerScore = 0
+        choiceButtons.forEach((button) => {
+            button.disabled = false
+        })
     })
 }
 
